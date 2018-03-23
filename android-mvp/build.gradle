@@ -1,0 +1,22 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0.0"
+    }
+}
+
+dependencies {
+    // Check https://github.com/ReactiveX/RxJava/releases
+    implementation "io.reactivex.rxjava2:rxjava:2.1.11"
+
+    // Check https://developer.android.com/topic/libraries/architecture/release-notes.html
+    implementation "android.arch.lifecycle:runtime:1.1.1"
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+    annotationProcessor "android.arch.lifecycle:compiler:1.1.1"
+}

@@ -7,7 +7,7 @@ import io.reactivex.disposables.CompositeDisposable;
  *
  * @author Playmoweb
  */
-public abstract class BaseRxJavaPresenter extends BasePresenter {
+public abstract class BaseRxJavaPresenter<T extends MvpView> extends BasePresenter<T> {
 
     protected CompositeDisposable disposables = new CompositeDisposable();
 

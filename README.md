@@ -15,7 +15,7 @@ allprojects {
 Step 2. Add the dependency
 ```
 dependencies {
-    compile 'com.github.playmoweb:library-android-mvp:1.0.0'
+    implementation 'com.github.playmoweb:library-android-mvp:1.0.1'
 }
 ```
 
